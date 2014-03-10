@@ -282,8 +282,8 @@ $fh.ready({}, function () {
         /*
         Uncomment these lines to use the mock mBaaS server included with the AppForm JS sdk
          */
-        $fh.cloud_props.hosts.debugCloudUrl = "http://127.0.0.1:3001";
-        $fh.app_props.host = "http://127.0.0.1:3001";
+        //$fh.cloud_props.hosts.debugCloudUrl = "http://127.0.0.1:3001";
+        //$fh.app_props.host = "http://127.0.0.1:3001";
 
         /*
         Initializes the forms API
