@@ -205,6 +205,7 @@ function renderForms(formId) {
                     Event listener for 'submitted'. Called when the submission has uploaded successfully.
                      */
                     currentSubmission.on("submitted", function () {
+                      console.log(arguments);
                         window.alert("Form successfully submitted");
                         console.log("Form successfully submitted");
                         /*
