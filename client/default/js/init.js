@@ -205,6 +205,7 @@ function renderForms(formId) {
                     Event listener for 'submitted'. Called when the submission has uploaded successfully.
                      */
                     currentSubmission.on("submitted", function () {
+                     $fh.forms.log.l("logs for forms works");
                       console.log(arguments);
                         window.alert("Form successfully submitted");
                         console.log("Form successfully submitted");
@@ -212,7 +213,8 @@ function renderForms(formId) {
                         Submission successfully completed. Creating a new empty submission.
                         */
                         currentSubmission = foundForm.newSubmission();
-
+                       var logs = $fh.forms.logs.getLogs();
+                       console.log("got logs ", logs);
                     });
 
                     /*
