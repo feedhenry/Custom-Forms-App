@@ -212,7 +212,9 @@ function renderForms(formId) {
                         console.log('was true');
                       }
                       else {
+                        $fh.forms.config.getConfig.logger == true;
                         $fh.forms.log.e('Error, it wasnt true');
+                        
                         console.log('wasnt true');
                       }
                       console.log(arguments);
