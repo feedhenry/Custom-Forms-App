@@ -207,6 +207,12 @@ function renderForms(formId) {
                     currentSubmission.on("submitted", function () {
                      $fh.forms.log.l("logs for forms works");
                      var log = $fh.forms.log.d('debufg log');
+                      if($fh.forms.config.getConfig.logger == true){
+                        $fh.forms.log.l('Yeah its true');
+                      }
+                      else {
+                        $fh.forms.log.e('Error, it wasnt true');
+                      }
                       console.log(arguments);
                         window.alert("Form successfully submitted");
                         console.log("Form successfully submitted");
