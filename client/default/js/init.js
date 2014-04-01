@@ -209,9 +209,11 @@ function renderForms(formId) {
                      var log = $fh.forms.log.d('debufg log');
                       if($fh.forms.config.getConfig.logger == true){
                         $fh.forms.log.l('Yeah its true');
+                        console.log('was true');
                       }
                       else {
                         $fh.forms.log.e('Error, it wasnt true');
+                        console.log('wasnt true');
                       }
                       console.log(arguments);
                         window.alert("Form successfully submitted");
