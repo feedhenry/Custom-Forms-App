@@ -206,6 +206,7 @@ function renderForms(formId) {
                      */
                     currentSubmission.on("submitted", function () {
                      $fh.forms.log.l("logs for forms works");
+                     var log = $fh.forms.log.d('debufg log');
                       console.log(arguments);
                         window.alert("Form successfully submitted");
                         console.log("Form successfully submitted");
