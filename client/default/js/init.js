@@ -213,7 +213,7 @@ function renderForms(formId) {
                         Submission successfully completed. Creating a new empty submission.
                         */
                         currentSubmission = foundForm.newSubmission();
-                       var logs = $fh.forms.logs.getLogs();
+                       var logs = $fh.forms.log.getLogs();
                        console.log("got logs ", logs);
                     });
 
